@@ -18,7 +18,7 @@ const FormHook = () => {
                     className="form-control my-2"
                     {...register("titulo", { required: true })}
                 />
-                {errors.titulo?.type && <div className="alert alert-danger" role="alert">Titulo es requerido</div> }
+                {errors.titulo?.type && <div className="alert alert-danger" role="alert">Campo requerido</div> }
                 <button type="submit" className="btn btn-dark">Enviar</button>
             </form>
         </Fragment>
